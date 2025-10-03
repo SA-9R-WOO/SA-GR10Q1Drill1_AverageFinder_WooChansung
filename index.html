@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Average Finder</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <style>
+        body {
+            font-family: font-family Arial, sans-serif;
+            background: linear-gradient(#0f2027, #203a43, #2c5364);
+            padding: 40px;
+            max-width: 420px;
+            margin: auto;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+            color: #ecf0f1;
+        }
+
+        h2 {
+            text-align: center;
+            color: #00e6e6;
+            letter-spacing: 2px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #00e6e6;
+            border-radius: 8px;
+            font-size: 16px;
+            background: #1c1c1c;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(90deg, #00e6e6, #00ffae);
+            color: #1c1c1c;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        p {
+            font-size: 15px;
+            margin-top: 10px;
+            color: #bdc3c7;
+            text-align: center;
+        }
+
+        #average, #result {
+            font-weight: bold;
+            color: #00ffae;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Average Finder</h2>
+
+    <p>Input 1:</p>
+    <input id="input1" type="text">
+
+    <p>Input 2:</p>
+    <input id="input2" type="text">
+
+    <button py-click="compute_average">Compute</button>
+
+    <p>Average: <span id="average"></span></p>
+    <p>Passed? <span id="result"></span></p>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
